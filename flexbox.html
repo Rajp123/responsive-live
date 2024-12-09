@@ -1,0 +1,88 @@
+<!-- We can create a sample web page `flexbox.html` with the following content to experiment with the Flexbox layout: -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+        <style>
+            #container {
+                background-color:coral;
+                border: 1px solid black;
+                font-family: sans-serif;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;       /* same for column */
+                /* flex-wrap: wrap; */
+                /* justify-content: flex-start; */
+                 /* height: 250px;  */
+                align-items: baseline;
+                /* justify-content: center;   //center on main axis  */
+                
+  
+            }
+
+            .item {
+                border: 1px solid black;
+                padding: 10px;
+                background-color: cornflowerblue;
+            } 
+            
+            /*we can have global settings for allign items and then override by allign-self*/
+            #item-1{
+                /* flex-grow: 2; */
+                /* flex-shrink: 1;
+                flex-basis: 0; */
+                flex: 1; 
+
+                
+            }
+            #item-2{
+                /* flex-grow: 6; */
+                /* flex-shrink: 3;
+                flex-basis: 0; */
+                /* we can also use width in percentage instead of flex  */
+                flex: 5;    
+        
+            }
+            #item-3{
+                /* flex-grow: 2; */
+                /* flex-shrink: 1;
+                flex-basis: 0;*/
+                flex: 1;
+            }
+
+
+            /* #item-1{
+                font-size: 23px;
+            }
+            #item-2{
+                font-size: 34px;
+            } */
+           
+
+
+            /* justify-items and allign contents */
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="item-1" class="item">
+                Item 1  Item 1 Item 1 
+            </div>
+            <div id="item-2" class="item">
+                Item 2 Item 1 Item 1
+            </div>
+            <div id="item-3" class="item">
+                Item 3 Item 1 Item 1
+            </div>
+            <!-- <div id="item-4" class="item">
+                Item 4
+            </div>
+            <div id="item-5" class="item">
+                Item 5
+            </div> -->
+        </div>
+    </body>
+</html>
